@@ -1,0 +1,67 @@
+/*struktur CSS
+- selector -> object / componen yg akan diberi styling
+- property -> detail dari styling
+- value -> nilai dari property
+
+Jenis-jenis penulisan selector
+- nama tag HTML
+- id tag HTML (#)
+- class tag HTML (.)
+
+analogi
+- seluruh siswa SMK Telkom Malang harap memakai seragam batik
+struktur CSS:
+siswa_Telkom{
+    seragam : batik;
+}
+- siswa kelas XI RPL 4 harap membawa tongkat pramuka
+struktur CSS:
+.XI_RPL_4{
+    tongat: pramuka
+}
+- siswa dengan NISN 1001 harap membawa bekal nasi goreng
+struktur CSS:
+#1001{
+    bekal:nasi goreng
+}
+
+JADIII
+id berlaku untuk 1 komponen saja
+*/
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blue;
+    font-size: large;
+}
+
+p {
+    color: cadetblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#paragraf_khusus{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.paragraf_penting{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.tombol{
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.paragraf_penting .tombol {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
