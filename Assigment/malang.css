@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+/* style berikut ini akan diterapkan pada komponen HTML
+yang mempunyai class yg mengandung keyword "col-" */
+[class*="col-"] { float: left; padding: 15px; }
+
+/* For Smartphone */
+[class*="col-"] { width: 100%; }
+
+/* for tablet */
+@media only screen and (min-width: 600px){
+    .col-md-1 { width: 8.33% } /* 1/12 x 100% */
+    .col-md-2 { width: 16.66% } /* 2/12 x 100% */
+    .col-md-3 { width: 25% } /* 3/12 x 100% */
+    .col-md-4 { width: 33.33% } /* 4/12 x 100% */
+    .col-md-5 { width: 41.66% } /* 5/12 x 100% */
+    .col-md-6 { width: 50% } /* 6/12 x 100% */
+    .col-md-7 { width: 58.33% } /* 7/12 x 100% */
+    .col-md-8 { width: 66.66% } /* 8/12 x 100% */
+    .col-md-9 { width: 75% } /* 9/12 x 100% */
+    .col-md-10 { width: 83.33% } /* 10/12 x 100% */
+    .col-md-11 { width: 91.66% } /* 11/12 x 100% */
+    .col-md-12 { width: 100% } /* 12/12 x 100% */
+}
+
+/* for PC */
+@media only screen and (min-width: 768px){
+    .col-lg-1 { width: 8.33% } /* 1/12 x 100% */
+    .col-lg-2 { width: 16.66% } /* 2/12 x 100% */
+    .col-lg-3 { width: 25% } /* 3/12 x 100% */
+    .col-lg-4 { width: 33.33% } /* 4/12 x 100% */
+    .col-lg-5 { width: 41.66% } /* 5/12 x 100% */
+    .col-lg-6 { width: 50% } /* 6/12 x 100% */
+    .col-lg-7 { width: 58.33% } /* 7/12 x 100% */
+    .col-lg-8 { width: 66.66% } /* 8/12 x 100% */
+    .col-lg-9 { width: 75% } /* 9/12 x 100% */
+    .col-lg-10 { width: 83.33% } /* 10/12 x 100% */
+    .col-lg-11 { width: 91.66% } /* 11/12 x 100% */
+    .col-lg-12 { width: 100% } /* 12/12 x 100% */
+}
+.main img{
+    position: relative;
+    z-index: 1;
+    top : 0px;
+}
+
+#malang h1{
+    color: black;
+    position: absolute;
+    top: -800px;
+    z-index: 2;
+    left: 500px;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+
+#malang h2{
+    color:black;
+    position: absolute;
+    top: -740px;
+    z-index: 2;
+    left: 500px;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#malang #map{
+    border-radius: 20px;
+    background-color:grey;
+    color:lightblue;
+    font-size: 15px;
+    padding-left: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    z-index: 2;
+    left: 500px;
+    position:absolute;
+    top: -680px;
+}
+
+#malang #map:hover{
+    border-radius: 20px;
+    background-color: lightblue;
+    color: grey;
+    font-size: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#malang #more{
+    border-radius: 20px;
+    background-color:grey;
+    color:lightblue;
+    font-size: 15px;
+    padding-left: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    z-index: 2;
+    left: 620px;
+    position:absolute;
+    top: -680px;
+}
+
+#malang #more:hover{
+    border-radius: 20px;
+    background-color: lightblue;
+    color: grey;
+    font-size: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#bg {
+    background-color:lightblue;
+    border-radius: 80px;
+    height: 300px;
+    width: 300px    ;
+    position: relative;
+    transform: rotate(30deg);
+}
+
+#bg img {
+    transform: rotate(-30deg);
+    border-radius: 10px;
+    position: relative;
+    top: -50px;
+    right: -40px;
+    height: 300px;
+    width: 450px;
+}
+
+#info{
+    color: rgb(53, 51, 51);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#info h2{
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+#unik h1{
+    text-align: center;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#unik h6{
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color:rgb(46, 46, 46);
+}
+
+.icon{
+    text-align: center;
+    color: darkslategray;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.icon i{
+    font-size: 30px;
+    color: lightblue;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 10px;
+}
